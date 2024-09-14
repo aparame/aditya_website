@@ -97,11 +97,11 @@
           <h3>Research</h3>
         </div>
         <div class="row">
-          <p>
+          <p style="text-align: justify;">
             My research interests lie in neurosymbolic deep learning, formal verification and controls for robotics and
             autonomous vehicle applications.
             I have worked on developing path planning and navigation tools for ground robots using formal tools like
-            temporal languages [1][2].
+            temporal languages <a href="https://github.com/aparame/Temporal_Logic_Guided_Robot_Navigation">[1]</a> <a href="https://github.com/aparame/Faster_TLG-RN">[2]</a>.
             I have also worked on integrating 3D semantic mapping tools for off-road ground robot applications using the
             <a href="https://octomap.github.io/" target="_blank">octomap</a> library.
             Currently, I am developing neurosymbolic tools to formally verify convolutional neural networks and neural
@@ -112,30 +112,75 @@
 
       <div class="mt-2">
         <ul class="list-group">
-          <li class="list-group-item">
+          <li class="list-group-item pb-md-5">
             <div class="card" style="border: none;">
               <div class="row no-gutters">
                 <div class="col-md-4">
-                  <a href="images/research/images/safety-verification.png" target="_blank" ><img src="images/research/images/safety-verification.png" class="card-img" alt="Sample Image"></a>
+                  <div class="overlay-container">
+                    <img src="images/research/images/safety-verification.png" alt="Background Image" class="background">
+                    <a href="images/research/images/safety-verification.png" target="_blank" class="overlay"><img src="images/research/mw_2.gif" class="card-img overlay" alt="Safety Verification" ></a>
+                  </div>
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
-                    <h5 class="card-title"><a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Oz75U7wAAAAJ&citation_for_view=Oz75U7wAAAAJ:u5HHmVD_uO8C" target="_blank">
-                      <span class="papertitle">Safety Verification of Autonomous Vehicles based on Signal Temporal Logic (STL) constraints</span>
-                    </a></h5>
+                    <h5 class="card-title"><a
+                        href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Oz75U7wAAAAJ&citation_for_view=Oz75U7wAAAAJ:u5HHmVD_uO8C"
+                        target="_blank">
+                        <span class="papertitle">Safety Verification of Autonomous Vehicles based on Signal Temporal
+                          Logic (STL) constraints</span>
+                      </a></h5>
                     <p class="card-text">
-                    <a href="https://aparame.github.io/aditya_website/">Aditya Parameshwaran</a>,
-                    <a href="https://yue6.people.clemson.edu/index.php">Yue Wang</a>
-                    <br>
-                    2D navigation model for an autonomous vehicle based on task specifications given in signal temporal logic (STL) guaranteeing safety.
+                      <a href="https://aparame.github.io/aditya_website/">Aditya Parameshwaran</a>,
+                      <a href="https://yue6.people.clemson.edu/index.php">Yue Wang</a>
+                      <br>
+                      2D navigation model for an autonomous vehicle based on task specifications given in signal
+                      temporal logic (STL) guaranteeing safety.
                     </p>
-                    
-                    <p class="card-text"><a href="https://drive.google.com/file/d/1-9hnOEj0WTeBWehGWztxvabiHVWpZPeI/view">Paper</a></p>
+
+                    <p class="card-text"><a
+                        href="https://drive.google.com/file/d/1-9hnOEj0WTeBWehGWztxvabiHVWpZPeI/view"
+                        target="_blank">Paper</a> | <a
+                        href="https://github.com/aparame/Temporal_Logic_Guided_Robot_Navigation" target="_blank">Source
+                        Code</a></p>
                   </div>
                 </div>
               </div>
             </div>
           </li>
+
+          <li class="list-group-item">
+            <div class="card" style="border: none;">
+              <div class="row mb-10">
+                <div class="col-md-4">
+                  <div class="overlay-container  pb-10">
+                    <img src="images/research/images/safety-verification.png" alt="Background Image" class="background">
+                    <img src="images/research/mw_2.gif" alt="Overlay GIF" class="overlay">
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title"><a
+                        href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Oz75U7wAAAAJ&citation_for_view=Oz75U7wAAAAJ:u5HHmVD_uO8C"
+                        target="_blank">
+                        <span class="papertitle">Temporal Logic Guided Robot Navigation</span>
+                      </a></h5>
+                    <p class="card-text">
+                      <a href="https://aparame.github.io/aditya_website/">Aditya Parameshwaran</a>,
+                      <a href="https://yue6.people.clemson.edu/index.php">Yue Wang</a>
+                      <br>
+                      2D controller synthesis combining Linear and Signal Temporal Logic specifications to gurantee safe
+                      and robust navigation for ground robots. This method is an update on the SAE Paper from 2023 and
+                      is faster while maintaining similar levels of safety as before.
+                    </p>
+
+                    <p class="card-text"><a href="#" target="_blank">Paper</a> | <a
+                        href="https://github.com/aparame/Faster_TLG-RN" target="_blank">Source Code</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
           <!-- Repeat the list-group-item as needed -->
         </ul>
       </div>
@@ -143,7 +188,7 @@
     </div>
     <div class="mt-2">
       <a href="https://clustrmaps.com/site/1bzsm" title="Visit tracker"><img
-        src="//www.clustrmaps.com/map_v2.png?d=CohQDJ03hYE1HZTkcj3jQZrHggxMQALIKVQO070CtSM&cl=ffffff" /></a>
+          src="//www.clustrmaps.com/map_v2.png?d=CohQDJ03hYE1HZTkcj3jQZrHggxMQALIKVQO070CtSM&cl=ffffff" /></a>
     </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
