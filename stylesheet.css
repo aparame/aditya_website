@@ -43,6 +43,12 @@ h5 {
   transition: opacity 0.3s ease;
   /* Smooth transition for the background image */
 }
+.overlay-container img.no_overlay {
+  width: 100%;
+  height: auto;
+  display: block;
+  /* Smooth transition for the background image */
+}
 
 .overlay-container img.overlay {
   position: absolute;
