@@ -23,6 +23,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Layout */
 .page-container {
   min-height: 100vh;
+  padding: 0; /* Remove default padding */
 }
 
 .content-container {
@@ -140,18 +141,20 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Consistent image and GIF styling */
 .image-container {
-  height: 240px;
-  overflow: hidden;
-  position: relative;
-  border-radius: 6px;
+  height: 280px; /* Increased from 220px */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 15px;
+  overflow: hidden;
+  border-radius: 6px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
 .research-image, .project-image, .animated-gif {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain; /* Changed from cover to contain to show full images */
   transition: transform 0.3s ease;
 }
 
@@ -226,57 +229,18 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
 }
 
-.dual-media-container {
-  display: flex;
-  height: 240px;
-  margin: 15px;
-  gap: 10px;
-}
-
-.media-item {
-  flex: 1;
-  height: 100%;
-  overflow: hidden;
-  border-radius: 6px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-}
-
-.media-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-.media-item:hover img.research-image {
-  transform: scale(1.05);
-}
-
-.media-item .animated-gif {
-  object-fit: contain;
-}
-
-/* Add these to your stylesheet.css */
-
-/* Increase container width for better content display */
-.container {
-  max-width: 1320px;
-}
-
-
-
 /* Updated dual media container for vertical stacking */
 .dual-media-container {
   display: flex;
-  flex-direction: column; /* Changed from row to column for vertical stacking */
-  height: auto; /* Allow container to expand with content */
+  flex-direction: column;
+  height: auto;
   margin: 15px;
-  gap: 15px; /* Increased gap between items */
+  gap: 15px;
 }
 
 .media-item {
   width: 100%;
-  height: 220px; /* Fixed height for all media containers */
+  height: 280px; /* Increased from 220px */
   overflow: hidden;
   border-radius: 6px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
@@ -288,47 +252,46 @@ h1, h2, h3, h4, h5, h6 {
 .media-item img {
   max-width: 100%;
   max-height: 100%;
-  object-fit: contain; /* This ensures the image is fully visible without cropping */
+  object-fit: contain;
   transition: transform 0.3s ease;
 }
 
 .media-item:hover img.research-image {
   transform: scale(1.05);
-}
-
-/* Make the standard image containers match the dual container style */
-.image-container {
-  height: 220px; /* Match the height of media-item */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 15px;
-  overflow: hidden;
-  border-radius: 6px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-}
-
-.image-container img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
 }
 
 /* Adjust column widths to give more space for the media */
 @media (min-width: 992px) {
-  .research-card .col-md-4 {
-    width: 35%;
+  .research-card .col-md-4, .project-card .col-md-4 {
+    width: 40%; /* Increased from 35% */
   }
   
-  .research-card .col-md-8 {
-    width: 65%;
+  .research-card .col-md-8, .project-card .col-md-8 {
+    width: 60%; /* Decreased from 65% */
+  }
+}
+
+/* Container adjustments */
+.container {
+  max-width: 1500px; /* Increased from 1320px */
+  width: 95%; /* This ensures the container takes up most of the available width */
+}
+
+/* Make the main content take up more of the screen */
+@media (min-width: 992px) {
+  .col-lg-2 {
+    width: 15%; /* Reduced from default 16.66% */
+  }
+  
+  .col-lg-10 {
+    width: 85%; /* Increased from default 83.33% */
   }
 }
 
 /*
  * Lightbox Modal Styling
  */
- .modal {
+.modal {
   display: none;
   position: fixed;
   z-index: 1000;
