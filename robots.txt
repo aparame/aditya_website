@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aparame.github.io/aditya_website/sitemap.xml
