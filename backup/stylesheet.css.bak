@@ -243,29 +243,6 @@ section {
   box-shadow: var(--shadow-md);
 }
 
-.contact-links {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  /* Increased spacing */
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.contact-links a {
-  color: var(--text-muted);
-  font-size: 1.25rem;
-  transition: var(--transition);
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-}
-
-.contact-links a:hover {
-  color: var(--primary);
-  transform: translateY(-2px);
-}
-
 .btn-primary:hover {
   background: var(--primary-dark);
   color: white;
